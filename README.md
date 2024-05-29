@@ -1,0 +1,2 @@
+# myEducation
+learning python
