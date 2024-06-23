@@ -1,4 +1,5 @@
 class Complexity:
+    """Сложность"""
     def decision_first(self):
         """O(n^2)"""
         # В одну строку
@@ -25,7 +26,7 @@ class Complexity:
         s = input()
         ans = ""
         anscnt = 0
-        for i in set(s):        #Поменяли range на set бегаем по меньшему колличеству символов
+        for i in set(s):  # Поменяли range на set бегаем по меньшему колличеству символов
             newcount = 0
             for j in range(len(s)):
                 if s[i] == s[j]:
@@ -98,34 +99,3 @@ class Complexity:
                 if seq[i] > seqsum:
                     seqsum = seq[i]
             print(seqsum)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
