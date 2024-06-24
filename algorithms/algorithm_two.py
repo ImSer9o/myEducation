@@ -42,3 +42,55 @@ class LinearSearch:
                 ans = i
         return seq[ans]
 
+    def finde_max_2(self, seq):
+        """Найти максимальное число последовательности и второе по величине число
+        (такое, которое будет максимальным, если вычеркнуть из последовательности максимальное число)"""
+
+        max_1 = max(seq[0], seq[1])
+        max_2 = min(seq[0], seq[1])
+        for i in range(len(seq)):
+            if seq[i] > max_1:
+                max_2 = max_1
+                max_1 = seq[i]
+            elif seq[i] > max_2:
+                max_2 = seq[i]
+
+        return (max_1, max_2)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
