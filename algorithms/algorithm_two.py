@@ -48,7 +48,8 @@ class LinearSearch:
 
         max_1 = max(seq[0], seq[1])
         max_2 = min(seq[0], seq[1])
-        for i in range(len(seq)):
+        # цикл необходимо делать от 2 чтобы max_2 не переписался
+        for i in range(2, len(seq)):
             if seq[i] > max_1:
                 max_2 = max_1
                 max_1 = seq[i]
